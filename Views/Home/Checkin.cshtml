@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Sign In";
+}
+
+@ViewData["Code"]
+<img src="@Url.Action("Preview", "Home", new { code = ViewData["Code"] })" class="label" />
+
